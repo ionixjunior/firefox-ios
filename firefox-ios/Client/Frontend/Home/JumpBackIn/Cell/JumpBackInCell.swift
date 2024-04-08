@@ -62,8 +62,7 @@ class JumpBackInCell: UICollectionViewCell, ReusableCell {
 
     private let itemTitle: UILabel = .build { label in
         label.adjustsFontForContentSizeCategory = true
-        label.font = DefaultDynamicFontHelper.preferredFont(withTextStyle: .subheadline,
-                                                            size: UX.titleFontSize)
+        label.font = FXFontStyles.Regular.subheadline.scaledFont()
         label.numberOfLines = 2
     }
 
